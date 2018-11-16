@@ -62,9 +62,10 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
         body: Center(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: <Widget>[
+              Image.network("https://grapee.jp/wp-content/uploads/s-10057_main.jpg"),
               Text(
                 "石原さとみの今日のパンツの色は？",
                 style: TextStyle(fontSize: 20.0),
@@ -99,7 +100,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     onPressed: () {
                       setState(() {
                         judge = "正解だよ！";
-                        judgeStyle = TextStyle(fontSize: 30.0, color: Colors.red);
+                        judgeStyle =
+                            TextStyle(fontSize: 30.0, color: Colors.red);
                       });
                       print("白が押された");
                     },
